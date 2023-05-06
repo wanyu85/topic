@@ -1,0 +1,89 @@
+@media screen and (max-width:992px) {
+    .mediaWord {
+        font-size: 20px;
+        width: 250px;
+        margin: 30px 0 30px 0;
+    }
+
+    .seeMore {
+        font-size: 15px;
+    }
+
+    .bookcase_word {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 17px;
+        padding-bottom: 120px;
+    }
+
+    .select_btn {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    .select_word {
+        font-size: 16px;
+    }
+
+    .hotSearch_bgc {
+        font-size: 17px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .daily_newPrice {
+        font-size: 17px;
+    }
+}
+
+row {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.clickOn:hover {
+    background-color: rgb(69, 94, 105);
+    color: aliceblue;
+}
+
+.goBuy:hover {
+    color: rgb(0, 0, 0);
+}
+
+.word_color {
+    color: rgb(69, 94, 105);
+}
+
+/* 數量增減鍵 */
+.qty {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+
+input.qtyPlus {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+}
+
+input.qtyMinus {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+}
+
+.quantity:hover{
+    background-color: rgb(69, 94, 105);
+}

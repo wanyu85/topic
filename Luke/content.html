@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke || 特殊傳說 Ⅲ 6</title>
+    <link rel="icon" type="image/png" href="./icon/navbar/fotor_2023-2-12_16_13_13.png">
+
+
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <!-- 時間字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+
+    <!-- bs -->
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="./_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./header.js"></script>
+    <script src="./content.js"></script>
+
+    <!-- css 連結 -->
+    <link rel="stylesheet" href="./new_page.html">
+    <link rel="stylesheet" href="content.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container_nav1 text-light">
+            <div class="row nav_bgc_1 justify-content-start">
+                <div class="col p-1">
+                    <p id="aboutMe">關於我們</p>
+                    <a class="clearLink" href="#">
+                        <i class="bi bi-instagram navIcon"></i>
+                    </a>
+                    <a class="clearLink" href="#">
+                        <i class="bi bi-facebook navIcon"></i>
+                    </a>
+                    <a class="clearLink" href="#">
+                        <i class="bi bi-line navIcon"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <ul class="nav nav-fill justify-content-end">
+                        <li><a href="#" class="nav-link nav-item text-light">
+                                <i class="bi bi-bell"></i>
+                                <span class="navbar_word">通知總覽</span></a></li>
+                        <li><a href="#" class="nav-link nav-item text-light">
+                                <i class="bi bi-app-indicator"></i>
+                                <span class="navbar_word">訂單查詢</span></a></li>
+                        <li><a href="#" class="nav-link nav-item text-light">
+                                <i class="bi bi-cart"></i>
+                                <span class="navbar_word">購物車</span></a></li>
+                        <li><a href="#" class="nav-link nav-item text-light">
+                                <i class="bi bi-columns-gap"></i>
+                                <span class="navbar_word">電子書櫃</span></a></li>
+                        <li><a href="#" class="nav-link nav-item text-light">
+                                <i class="bi bi-globe-americas"></i>
+                                <span class="navbar_word">繁體</span></a></li>
+                        <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login"
+                                class="nav-link nav-item text-light"><img src="./image/7.喪喪兔.jpg" alt=""
+                                    style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px;">
+                                <span class="navbar_word">ヽ(*´∀｀*)ﾉ</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 跳出視窗 -->
+        <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>會員登入</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 登入表單 -->
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="account form-control" placeholder="帳號">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="password form-control" placeholder="密碼">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" class="remember">記住密碼
+                            </div>
+                            <button onclick="infoJumpTo()" type="submit" class="btn btn-info">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="signup">
+                            <span>尚未成為會員</span>
+                            <a href="#" type="button" class="member clearLink" style="color: rgb(69, 94, 105);">立即加入</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container_nav2">
+            <div class="row nav_bgc_2">
+                <div class="col-2"></div>
+                <!-- logo -->
+                <div class="col-3 placeCenter">
+                    <a class="navbar-brand clearLink" href="#">
+                        <img src="./icon/navbar/fotor_2023-2-12_16_13_13.png" alt="" width="60" height="60"
+                            class="logo_icon">
+                        <span class="logo_word">Luke</span>
+                    </a>
+                </div>
+                <!-- 搜索鍵 -->
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12 mb-1">
+                            <div class="input-group search_box ">
+                                <input type="Search" class="form-control border rounded-pill" placeholder="Search"
+                                    aria-label="Search" aria-describedby="button-addon2">
+                                <button class="btn border border-light rounded-pill" type="submit" id="search_icon"><img
+                                        src="./icon/navbar/search.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 搜索推薦 -->
+                    <div class="d-flex justify-content-around w-100 p-2 ">
+                        <span class="p-1 hot_word">HOT</span>
+                        <button class="border border-1 rounded-4 border-0 hotkey">國際書展</button>
+                        <button class="border border-1 rounded-4 border-0 hotkey">國際書展</button>
+                        <button class="border border-1 rounded-4 border-0 hotkey">國際書展</button>
+                        <button class="border border-1 rounded-4 border-0 hotkey">國際書展</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_nav3">
+            <div class="row nav_bgc_3">
+                <nav class="navbar navbar-expand-lg navbar-light nav-bar navbar-fixed-top">
+                    <!-- RWD btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- 導覽列上的超連結 -->
+                    <div class="collapse  navbar-collapse navbar-center" id="navDropdown">
+                        <ul class="nav navbar-nav">
+                            <!-- 暢銷榜 -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">暢銷即時榜</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">網路暢銷榜</a></li>
+                                    <li><a class="dropdown-item" href="#">書店暢銷榜</a></li>
+                                </ul>
+                            </li>
+                            <!-- 中文 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-bs-toggle="dropdown" href="#">中文出版</a>
+                                <!--下拉式選單選項  -->
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">分類</a>
+                                        <!-- 子選單 L2 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">全部</a></li>
+                                            <li><a class="dropdown-item" href="#">編輯推薦</a></li>
+                                            <li class="dropdown-submenu border-bottom">
+                                                <a class="dropdown-item dropdown-toggle" href="#">雜誌嚴選</a>
+                                                <!-- 子選單 L3 -->
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">雜誌．商業人文</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．潮流風格</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．生活休閒</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．知識學習</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">小說</a></li>
+                                            <li class="border-bottom"><a class="dropdown-item " href="#">漫畫圖文</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">文學</a></li>
+                                            <li><a class="dropdown-item" href="#">人文哲學</a></li>
+                                            <li><a class="dropdown-item" href="#">社會科學</a></li>
+                                            <li><a class="dropdown-item" href="#">自然科普</a></li>
+                                            <li><a class="dropdown-item" href="#">商業財經</a></li>
+                                            <li><a class="dropdown-item" href="#">醫學保健</a></li>
+                                            <li><a class="dropdown-item" href="#">心理勵志</a></li>
+                                            <li><a class="dropdown-item" href="#">藝術設計</a></li>
+                                            <li><a class="dropdown-item" href="#">生活風格</a></li>
+                                            <li><a class="dropdown-item" href="#">旅遊</a></li>
+                                            <li><a class="dropdown-item" href="#">飲食</a></li>
+                                            <li class="border-bottom"><a class="dropdown-item" href="#">親子教育</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">考試用書</a></li>
+                                            <li><a class="dropdown-item" href="#">語言學習</a></li>
+                                            <li><a class="dropdown-item" href="#">電腦</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">排行榜</a></li>
+                                    <li><a class="dropdown-item" href="#">即將出版</a></li>
+                                    <li><a class="dropdown-item" href="#">預購專區</a></li>
+                                    <li><a class="dropdown-item" href="#">出版社專區</a></li>
+                                </ul>
+                            </li>
+                            <!-- 外文 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-bs-toggle="dropdown" href="#">外文出版</a>
+                                <!--下拉式選單選項  -->
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">分類</a>
+                                        <!-- 子選單 L2 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">全部</a></li>
+                                            <li><a class="dropdown-item" href="#">編輯推薦</a></li>
+                                            <li class="dropdown-submenu border-bottom">
+                                                <a class="dropdown-item dropdown-toggle" href="#">雜誌嚴選</a>
+                                                <!-- 子選單 L3 -->
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">雜誌．日文</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．英文</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．其他語言</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．知識學習</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">小說</a></li>
+                                            <li class="border-bottom"><a class="dropdown-item " href="#">漫畫圖文</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">文學</a></li>
+                                            <li><a class="dropdown-item" href="#">人文社科</a></li>
+                                            <li><a class="dropdown-item" href="#">社會科學</a></li>
+                                            <li><a class="dropdown-item" href="#">自然科普</a></li>
+                                            <li><a class="dropdown-item" href="#">商業財經</a></li>
+                                            <li><a class="dropdown-item" href="#">醫學保健</a></li>
+                                            <li><a class="dropdown-item" href="#">心理勵志</a></li>
+                                            <li><a class="dropdown-item" href="#">藝術設計</a></li>
+                                            <li><a class="dropdown-item" href="#">生活風格</a></li>
+                                            <li><a class="dropdown-item" href="#">旅遊</a></li>
+                                            <li><a class="dropdown-item" href="#">飲食</a></li>
+                                            <li class="border-bottom"><a class="dropdown-item" href="#">親子教育</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">考試用書</a></li>
+                                            <li><a class="dropdown-item" href="#">語言學習</a></li>
+                                            <li><a class="dropdown-item" href="#">電腦</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">排行榜</a></li>
+                                    <li><a class="dropdown-item" href="#">即將出版</a></li>
+                                    <li><a class="dropdown-item" href="#">預購專區</a></li>
+                                    <li><a class="dropdown-item" href="#">出版社專區</a></li>
+                                </ul>
+                            </li>
+                            <!-- 電子書  -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-bs-toggle="dropdown" href="#">電子書</a>
+                                <!--下拉式選單選項  -->
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">分類</a>
+                                        <!-- 子選單 L2 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">全部</a></li>
+                                            <li><a class="dropdown-item" href="#">編輯推薦</a></li>
+                                            <li class="dropdown-submenu border-bottom">
+                                                <a class="dropdown-item dropdown-toggle" href="#">雜誌嚴選</a>
+                                                <!-- 子選單 L3 -->
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">雜誌．語言</a></li>
+                                                    <li><a class="dropdown-item" href="#">雜誌．知識學習</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">小說</a></li>
+                                            <li class="border-bottom"><a class="dropdown-item " href="#">漫畫圖文</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">文學</a></li>
+                                            <li><a class="dropdown-item" href="#">人文社科</a></li>
+                                            <li><a class="dropdown-item" href="#">社會科學</a></li>
+                                            <li><a class="dropdown-item" href="#">自然科普</a></li>
+                                            <li><a class="dropdown-item" href="#">商業財經</a></li>
+                                            <li><a class="dropdown-item" href="#">醫學保健</a></li>
+                                            <li><a class="dropdown-item" href="#">心理勵志</a></li>
+                                            <li><a class="dropdown-item" href="#">藝術設計</a></li>
+                                            <li><a class="dropdown-item" href="#">生活風格</a></li>
+                                            <li><a class="dropdown-item" href="#">旅遊</a></li>
+                                            <li><a class="dropdown-item" href="#">飲食</a></li>
+                                            <li class="border-bottom"><a class="dropdown-item" href="#">親子教育</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">考試用書</a></li>
+                                            <li><a class="dropdown-item" href="#">語言學習</a></li>
+                                            <li><a class="dropdown-item" href="#">電腦</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">排行榜</a></li>
+                                    <li><a class="dropdown-item" href="#">即將出版</a></li>
+                                    <li><a class="dropdown-item" href="#">預購專區</a></li>
+                                    <li><a class="dropdown-item" href="#">出版社專區</a></li>
+                                </ul>
+                            </li>
+                            <!-- 文具/週邊 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-bs-toggle="dropdown" href="#">文具潮藝</a>
+                                <!--下拉式選單選項  -->
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                    <li><a class="dropdown-item" href="#">文具暢銷排行</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">嗜好收藏</a>
+                                        <!-- 子選單 L3 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">動漫週邊</a></li>
+                                            <li><a class="dropdown-item" href="#">影視週邊</a></li>
+                                            <li><a class="dropdown-item" href="#">聯名商品</a></li>
+                                            <li><a class="dropdown-item" href="#">潮流公仔</a></li>
+                                            <li><a class="dropdown-item" href="#">公仔盒玩</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            <!-- 影音 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-bs-toggle="dropdown" href="#">影音</a>
+                                <!--下拉式選單選項  -->
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                    <li><a class="dropdown-item" href="#"><b>強檔推薦</b></a></li>
+                                    <li><a class="dropdown-item" href="#">新品預購</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">格來美入圍名單</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">潮流音樂</a>
+                                        <!-- 子選單 L3 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">中文．團體/歌手</a></li>
+                                            <li><a class="dropdown-item" href="#">英文．團體/歌手</a></li>
+                                            <li><a class="dropdown-item" href="#">日本．團體/歌手</a></li>
+                                            <li><a class="dropdown-item" href="#">韓國．團體/歌手</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">華語CD．DVD</a></li>
+                                    <li><a class="dropdown-item" href="#">亞洲CD．DVD</a></li>
+                                    <li><a class="dropdown-item" href="#">西洋CD．DVD</a></li>
+                                    <li><a class="dropdown-item" href="#">古典CD．DVD</a></li>
+                                    <li><a class="dropdown-item" href="#">爵士CD．DVD</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- 回到最上層 -->
+    <button onclick="topFunction()" id="myBtn" title="GOtop" class="word_color"
+        style="border: 2px solid rgb(69, 94, 105);"><i class="bi bi-caret-up-fill"></i></button>
+
+    <!-- 內容 -->
+    <div class="container">
+        <div class="row placeCenter">
+            <!-- 圖 -->
+            <div class="col-lg-6 col-md-12  mt-5">
+                <img id="ccc" src="./image/20230130055035405271.jpg" style="width: 500px; height: 500px;" alt="">
+                <div class="p-2 mt-3 border border-1 justify-content-around" style="display: flex;">
+                    <img id="aaa" src="./image/20230130055035652274.jpg" style="width: 90px; height: 100px;" alt="">
+                    <img id="bbb" src="./image/20230130055112825356.jpg" style="width: 90px; height: 90px;" alt="">
+                    <img id="ddd" src="./image/20230130055035509272.jpg" style="width: 90px; height: 90px;" alt="">
+                </div>
+
+            </div>
+            <!-- 作者/庫存 -->
+            <div class="col-lg-6 col-md-12 mt-5">
+                <div class="myTitle word_color">
+                    <h2 cl style="display: inline-block;">特殊傳說 Ⅲ 6</h2>
+                    <a href="#" class="clearLink word_color" style="float:right;">
+                        <div class="placeCenter"
+                            style="text-align: center;font-size: 17px; width: 60px; height: 60px; border: 3px solid rgb(69, 94, 105); border-radius: 50%;">
+                            <i class="bi bi-eyeglasses" style="font-size: 40px;">
+                                <p style="font-size: 13px; margin-top: -50%;">試閱</p>
+                            </i>
+                        </div>
+                    </a>
+                    <p class="word_color" style="font-size: 18px;">作者:護玄</p>
+                    <p class="word_color" style="font-size: 18px;">出版社:蓋亞文化有限公司</p>
+                    <p class="word_color" style="font-size: 18px;">出版日期:2023/02/01</p>
+                </div>
+                <div>
+                    <div class="p-2 border border-1 rounded-3">
+                        <p class="word_color" style="font-size: 15px;">可購買版本 <span style="color: brown;">(3)</span>:</p>
+                        <div class="d-flex justify-content-around">
+                            <button class="rounded-3" style="border: 1px solid rgb(69, 94, 105);"><span
+                                    style="font-size: 15px;"><b
+                                        style="color: rgb(69, 94, 105); font-size: 16px;">電子書</b><span
+                                        style="color: rgb(46, 45, 45);">:優惠價</span> <span
+                                        style="color: brown;">161</span>
+                                    元</span></button>
+                            <button class="rounded-3" style="border: 1px solid rgb(69, 94, 105);"><span
+                                    style="font-size: 15px;"><b
+                                        style="color: rgb(69, 94, 105); font-size: 16px;">平裝</b><span
+                                        style="color: rgb(46, 45, 45);">:優惠價</span> <span
+                                        style="color: brown;">213</span>
+                                    元</span></button>
+                            <button class="rounded-3" style="border: 1px solid rgb(69, 94, 105);"><span
+                                    style="font-size: 15px;"><b
+                                        style="color: rgb(69, 94, 105); font-size: 16px;">盒裝</b><span
+                                        style="color: rgb(46, 45, 45);">:優惠價</span> <span
+                                        style="color: brown;">684</span>
+                                    元</span></button>
+                        </div>
+                    </div>
+                    <div class="m-3">
+                        <table>
+                            <tr>
+                                <td class="word_color pe-2">數量:</td>
+                                <td>
+                                    <button type="button" onclick="insc()" class="btn btn-primary btn-sm clickOn"
+                                        style="border: 1px solid rgb(69, 94, 105);width: 35px; height: 35px; border-radius: 100%;color: rgb(69, 94, 105);  background-color: white;">+</button>
+                                    <button type="button" class="btn btn-sm" id="count">3</button>
+                                    <button type="button" onclick="dec()" class="btn btn-primary btn-sm clickOn"
+                                        style="border: 1px solid rgb(69, 94, 105);width: 35px; height: 35px; border-radius: 100%;color: rgb(69, 94, 105);  background-color: white;">-</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <a href="#" class="word_color">
+                            <p class="mt-3" style="font-size: 15px; align-items: center;">查看門市庫存</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 購物車 -->
+                <div class="d-flex justify-content-around pt-3 pb-3 mb-3 border border-1 border-end-0 border-start-0"
+                    style="font-size: 20px;">
+                    <a href="#" class="clearLink">
+                        <button class="rounded-3 clickOn bgc_color" style="border: 1px solid rgb(69, 94, 105);"><i
+                                class="bi bi-heart clickOn word_color"></i></button>
+                    </a>
+                    <a href="#" class="clearLink">
+                        <button class="rounded-3 clickOn bgc_color" style="border: 1px solid rgb(69, 94, 105);"><span
+                                class="clickOn word_color">加入購物車</span></button>
+                    </a>
+                    <a href="#" class="clearLink">
+                        <button class="rounded-3 bgc_color"
+                            style="background-color: rgb(69, 94, 105); border: 1px solid rgb(69, 94, 105); color: white;"><span
+                                class=" goBuy">直接購買</span></button>
+                    </a>
+
+
+                </div>
+                <!-- 付款/配送 -->
+                <div class="accordion accordion-flush border border-1" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <span class="word_color">付款方式</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body word_color">
+                                <p>信用卡一次付清 | ATM轉帳 | 7-ELEVEN超商取貨付款 | eslite pay | 全家付款 | 街口支付 | LINE Pay </p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <span class="word_color">配送方式</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body word_color">
+                                <p> 台灣以外快遞寄送 | 台灣-宅配(台灣地區) | 台灣7-ELEVEN取貨 | 全家取貨 |</p>
+                                <p style="color: brown;">※ 請注意！購物車內有任意商品不適合分期付款，或所有商品分期方案皆不同，則整車商品不得使用信用卡分期。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 內容 -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mt-5 p-3 rounded-3"
+                    style="color: rgb(69, 94, 105);border: 1px solid rgb(69, 94, 105);">
+                    <h5 class="border-bottom">內容簡介</h5>
+                    <p>以術法追尋米納斯本體，卻撞見驚悚畫面。</p>
+                    <p> 褚冥漾等人在地底礦坑由於禁制影響而四散，</p>
+                    <p> 迷霧幻境斷續出現，</p>
+                    <p> 偽神殿、體型縮水的意外身影、生命之石的痕跡……</p>
+                    <p> 往昔的腳步指引他們抵達的終點，</p>
+                    <p> 除了真身的線索，更有千年前被歸類為不OK的存在？</p>
+                    <br>
+                    <p> 一行人再入獄界，這次的密談夥伴竟是墮神族首領！</p>
+                    <p> 他們與雪野一族的恩怨血仇，魔龍有法可解？</p>
+                    <p> 而一則則針對各人的預警，更讓人無比胃痛……</p>
+                    <br>
+                    <p> 特別收錄</p>
+                    <p> 番外．殘夢</p>
+                    <br><br>
+
+                    <p>《特殊傳說》是人氣作家護玄的成名大作。</p>
+                    <p>爆笑又緊湊的情節、青春嗨翻天的想像力與迷人設定，在不可思議的誇張校園生活中，漸次鋪陳各個角色自我成長歷程。</p>
+                    <p>《特殊傳說Ⅲ》是「特傳」系列的最後一部曲，我們將跟隨明顯成長的角色們進入更廣闊的世界探索與體驗。這是主角們揮灑淚水與汗水的冒險物語，也是屬於我們的特殊傳說！
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mt-5">
+                    <div class="accordion accordion-flush border border-1" id="flush-headingThree">
+                        <div class="accordion-item" style="border-left: 5px solid rgb(69, 94, 105);">
+                            <h2 class="accordion-header " id="flush-headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                    aria-controls="flush-collapsefour">
+                                    <span class="word_color">贈品說明</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p style="color:rgb(74, 135, 161); font-size: 17px;">
+                                        <b>特殊傳說專屬人設卡——米納斯妲利亞＆特級美味特典．《晝夜循環 06》</b>
+                                    </p>
+                                    <img src="./image/20230130055035728275.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" style="border-left: 5px solid rgb(69, 94, 105);">
+                            <h2 class="accordion-header" id="flush-headingfive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsefive" aria-expanded="false"
+                                    aria-controls="flush-collapsefive">
+                                    <span class="word_color">作者介紹</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body word_color">
+                                    <b>護玄</b><br>
+                                    <b>護玄（離玄）</b>
+                                    <br><br>
+                                    <p>6月2日、雙子座。</p>
+                                    <p>職業腐屍。</p>
+                                    <p>喜歡音樂、電影、書籍與鳥。</p>
+                                    <p>畢生願望就是將自己所想的故事都能寫完。</p>
+                                    <p>不論哪種創作都是一件很有趣的事情，希望每個人都能愛護自己心中的創作小小人，讓他們茁壯更美好。</p>
+
+                                    <p>部落格：https://windslie.pixnet.net/blog（夜貓鳥宿）</p>
+                                    <p>噗浪：https://www.plurk.com/windslie（護玄H.X）</p>
+                                    <p>ＦＢ：https://www.facebook.com/SWS.HuXuan（護玄）</p>
+                                    <p>護玄作品集</p>
+                                    <p>特殊傳說0.5</p>
+                                    <p>新版．特殊傳說（學院篇．全十冊）</p>
+                                    <p>特殊傳說Ⅱ亙古潛夜篇（全四冊）</p>
+                                    <p>特殊傳說Ⅱ恆遠之晝篇（全十冊）</p>
+                                    <p>特殊傳說Ⅲ（陸續出版）</p>
+                                    <p>8 .Floor（陸續出版）</p>
+                                    <p>兔俠（全十冊）</p>
+                                    <p>因與聿案簿錄（全八冊）</p>
+                                    <p>案簿錄（全九冊）</p>
+                                    <p>案簿錄．浮生（陸續出版）</p>
+                                    <p>異動之刻（全十冊）</p>
+                                    <p>十年．踏痕歸</p>
+                                    <p>相關消息:
+                                        http://www.gaeabooks.com.tw</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row word_color">
+                <!-- 作者相關書籍 -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="border-bottom word_color mt-5 pb-2">作者相關書籍</h5>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 100%; height: 150px; justify-content: center;">
+                        <div class="col-3 " style="text-align: center;"><img src="./image/20220528034952042705.jpg"
+                                alt="" style="width: 100px; height: 130px;">
+                            <p class="overWord">特殊傳說Ⅲ 5</p>
+                        </div>
+                        <div class="col-3" style="text-align: center;"><img src="./image/20210730035805571583.jpg"
+                                alt="" style="width: 100px; height: 130px;">
+                            <p class=" overWord">特殊傳說 III 3</p>
+                        </div>
+                        <div class="col-3" style="text-align: center;"><img src="./image/633518175887606626.jpg" alt=""
+                                style="width: 100px; height: 130px;">
+                            <p class=" overWord">因與聿案簿錄 1: 山貓</p>
+                        </div>
+                        <div class="col-3" style="text-align: center;"><img src="./image/20221104033121993647.jpg"
+                                alt="" style="width: 140px; height: 130px;">
+                            <p class=" overWord">窺視: 案簿錄．浮生 4</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 最近瀏覽 -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="border-bottom word_color mt-5 pb-2">最近瀏覽</h5>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 100%; height: 150px; justify-content: center;">
+                        <div class="col-3 " style="text-align: center;"><img src="./image/20201205070137816089.jpg"
+                                alt="" style="width: 100px; height: 130px;">
+                            <p class="overWord">與成功有約: 高效能人士的七個習慣 (30週年全新增訂版)</p>
+                        </div>
+                        <div class="col-3" style="text-align: center;"><img src="./image/20220702053739463582.jpg"
+                                alt="" style="width: 100px; height: 130px;">
+                            <p class=" overWord">我所看見的未來 (完全版)</p>
+                        </div>
+                        <div class="col-3" style="text-align: center;"><img src="./image/20221206030846796585.jpg"
+                                alt="" style="width: 100px; height: 130px;">
+                            <p class=" overWord">獵人 37</p>
+                        </div>
+                        <div class="col-3" style="text-align: center;"><img src="./image/20230216060226436197.jpg"
+                                alt="" style="width: 100px; height: 130px;">
+                            <p class=" overWord">逆思維: 華頓商學院最具影響力的教授, 突破人生盲點的全局思考</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 圖 -->
+        <script>
+            var c = document.getElementById("ccc");
+            var b = document.getElementById("bbb");
+            var a = document.getElementById("aaa");
+            var d = document.getElementById("ddd");
+            a.onclick = () => {
+                c.src = "./image/20230130055035652274.jpg";
+                console.log("23")
+            }
+            b.onclick = () => {
+                c.src = "./image/20230130055112825356.jpg";
+                console.log("233")
+            }
+            c.onclick = () => {
+                c.src = "./image/20230130055035405271.jpg";
+            }
+            d.onclick = () => {
+                c.src = "./image/20230130055035509272.jpg";
+            }
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+.clearLink {
+    text-decoration: none;
+}
+
+.placeCenter {
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 重直置中 */
+    align-items: center;
+}
+
+.nav_bgc_1 {
+    background-color: rgb(69, 94, 105);
+}
+
+#aboutMe {
+    padding-left: 30px;
+    color: white;
+    display: inline-block;
+    padding-top: 5px;
+    margin: auto;
+}
+
+.navIcon {
+    color: white;
+    margin-left: 5px;
+}
+
+.navbar_word {
+    color: white;
+}
+
+.nav_bgc_2 {
+    background-color: rgb(137, 155, 160);
+    display: flex;
+    height: 140px;
+}
+
+.nav_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_icon {
+    margin: 5px 15px 20px 0;
+}
+
+.logo_word {
+    font-family: "logo";
+    font-size: 50px;
+    color: rgb(75, 75, 75);
+}
+
+.reciprocal_word {
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+}
+
+.search_box {
+    margin-top: 30px;
+}
+
+#search_icon {
+    background-color: white;
+    margin-left: -50px;
+}
+
+.hot_word,
+.hotkey {
+    color: rgb(75, 75, 75);
+}
+
+.hotkey {
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgba(114, 129, 129, 0.55);
+}
+
+.nav_bgc_3 {
+    background-color: rgb(137, 155, 160);
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0%;
+    left: 100%;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.dropdown-menu>li>a:hover:after {
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    padding: 0 30px 0 30px;
+}
+
+/* 今日推薦 */
+.daily_word {
+    color: rgb(69, 94, 105);
+    text-align: center;
+    margin: -1px;
+    padding-top: 5px;
+}
+
+.daily_newPrice {
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px 0 0;
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(170, 20, 20);
+    text-align: right;
+}
+
+.daily_price {
+    text-decoration: line-through;
+    display: inline-block;
+    font-size: 10px;
+    text-align: right;
+}
+
+.buy_Btn {
+    color: rgb(69, 94, 105);
+    border: 1px solid rgb(69, 94, 105);
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
+/* 熱門搜尋 */
+.hotSearch_bgc {
+    color: rgb(69, 94, 105);
+    font-size: 20px;
+}
+
+.hotSearch_bgc:hover {
+    background-color: rgba(136, 133, 133, 0.2);
+    color: rgb(69, 94, 105);
+}
+
+/* 限時優惠 */
+.overWord {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.time_word {
+    color: rgb(69, 94, 105);
+    font-size: 20px;
+}
+
+.time_word:hover {
+    color: rgb(69, 94, 105);
+}
+
+.time_cardIcon {
+    color: rgb(69, 94, 105);
+}
+
+.time_cardIcon:hover {
+    color: rgb(69, 94, 105);
+}
+
+.time_buyBtn {
+    color: rgb(69, 94, 105);
+    border: 1px solid rgb(69, 94, 105);
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+
+.seeMore {
+    color: rgb(69, 94, 105);
+    font-size: 16px;
+}
+
+
+.card-header,
+.card-title,
+.card-text {
+    font-size: 15px;
+}
+
+.card-title {
+    color: rgb(190, 184, 90);
+}
+
+/* 進度條 */
+.progress {
+    margin-bottom: 0px;
+    height: auto;
+    position: relative;
+    border: 1px solid rgba(69, 94, 105, 0.5);
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    color: rgb(69, 94, 105);
+    text-align: center;
+}
+
+/* ad */
+.carouselAd_img {
+    object-fit: cover;
+}
+
+/* 按鍵 */
+.select_btn {
+    /* background-color: rgb(186, 189, 190); */
+    border: 1px solid rgb(69, 94, 105);
+    font-size: 22px;
+    color: rgb(69, 94, 105);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.select_word {
+    font-size: 18px;
+    color: rgb(69, 94, 105);
+}
+
+
+
+/* 暢銷熱賣 */
+.bookcase_word {
+    font-size: 18px;
+    color: rgb(69, 94, 105);
+    padding-bottom: 80px;
+}
+
+.tabList_btn {
+    font-size: 17px;
+}
+
+/* 回到頂部 */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background-color: rgb(69, 94, 105);
+}
+
+/* 跳出視窗_會員登入 */
+.modal-header h3{
+    font-size: 30px;
+    color:rgb(69, 94, 105);
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal-body form .account,.modal-body form .password{
+    margin: 30px;
+    width: 90%;
+}
+
+.remember{
+    margin-bottom: 20px;
+}
+
+.submit_btn{
+    width: 100%;
+    font-size: 25px;
+    color: bisque;
+}
